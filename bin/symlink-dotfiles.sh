@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dev="$HOME/Development"
-dotfiles="$dev/paulmillr/dotfiles"
+dotfiles="$HOME/dotfiles"
 bin="/usr/local/bin"
 
 if [[ -d "$dotfiles" ]]; then
