@@ -1,15 +1,16 @@
 # Some stuff was taken from
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
-# Main
-# ====
+# ************************************************************
+# Currently for OSX Version 10.8.4
+# ************************************************************
 
 # Show battery life percentage.
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
-sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+#sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
@@ -96,25 +97,25 @@ defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 # ========
 
 # Use a modified version of the Pro theme by default in Terminal.app
-open "$pm/dotfiles/terminal/paulmillr.terminal"
+open "$HOME/dotfiles/terminal/danstroot.terminal"
 sleep 1 # Wait a bit to make sure the theme is loaded
-defaults write com.apple.terminal 'Default Window Settings' -string 'paulmillr'
-defaults write com.apple.terminal 'Startup Window Settings' -string 'paulmillr'
+defaults write com.apple.terminal 'Default Window Settings' -string 'danstroot'
+defaults write com.apple.terminal 'Startup Window Settings' -string 'danstroot'
 
 # Transmission
 # ============
 
 # Use `~/Documents/Torrents` to store incomplete downloads
-defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents"
+#defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
+#defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents"
 
 # Don’t prompt for confirmation before downloading
-defaults write org.m0k.transmission DownloadAsk -bool false
+#defaults write org.m0k.transmission DownloadAsk -bool false
 
 # Trash original torrent files
-defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
+#defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 
 # Hide the donate message
-defaults write org.m0k.transmission WarningDonate -bool false
+#defaults write org.m0k.transmission WarningDonate -bool false
 # Hide the legal disclaimer
-defaults write org.m0k.transmission WarningLegal -bool false
+#defaults write org.m0k.transmission WarningLegal -bool false
